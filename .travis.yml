@@ -9,7 +9,6 @@ python:
   - "3.5"
   - "3.4"
   - "2.7"
-  - "nightly"
 env: TOXENV=py,codecov
 matrix:
   include:
@@ -17,6 +16,7 @@ matrix:
         - amd64
         - arm64
       os: linux
+      dist: bionic
       language: python
       python:
          - "nightly"
